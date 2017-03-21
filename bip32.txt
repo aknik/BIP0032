@@ -1,0 +1,61 @@
+ku P:xxxxxx -s 0
+
+xprv9vWokxB3tpxkTWoHjF74jrnP76NQkC6STaAJTcEP6XFuPY4Rsu1t1YyfHXw8LcAPvmDptWgzeu5zWLKUiPe251vAsPZa9eg2sJ3ipa48hZZ
+
+
+(i.e. m/i'/0/k in BIP32 terminology)
+:~$ ku P:xxxxxx -s 0/0/0-6 -a
+
+1ALajVPDu5MrFPmuRKBzdG8PuVCaEJXfRx
+1BrJBT7WPyqRQ7u5yhiTmt6TiBhQTNTYvX
+1G2spm7erMCD9ysKLXcPa55F1V3J2yM8D6
+13B5FbC45DbCFMVvb3nvAGhrFRj1zZjdXx
+1E3Vhp4adQ1agL758mTT2JNPkDK7e5VE5M
+194DRrF1gpDcrQBL8F75FDxSgHzH7fxcp8
+1Bc83YYaVn5ugtBvZn7ydd5jDgWo7Hankc
+
+
+(i.e. m/i'/1/k in BIP32 terminology)
+:~$ ku P:xxxxxx -s 0/1/0-6 -a
+
+18HPFKrb1aLYSnhvoQ5CfqoCYznwcUXr2E
+1LGp1LnFuufY98MguNAVJWJsnZnjTRXTSg
+12YDATxuqhoZKWgxRtRcYdKodot8idAdtc
+112SYJ71d7mT7Nn7cdrCS4wSyw2QRT5D3T
+1Nj1zGg6wNeySRyi7zkQ3uPUqK6yZh8wCP
+1EoqfhWM3x5HEUDEzcpAGy5ZmBeCEKSPck
+1L7d8szqf9TCL3jt5gRs7z1rXxu6GLMj3e
+----------------------------------------------------------------------------
+ku -a xprv9vWokxB3tpxkTWoHjF74jrnP76NQkC6STaAJTcEP6XFuPY4Rsu1t1YyfHXw8LcAPvmDptWgzeu5zWLKUiPe251vAsPZa9eg2sJ3ipa48hZZ -s 0/0-6 
+1ALajVPDu5MrFPmuRKBzdG8PuVCaEJXfRx
+1BrJBT7WPyqRQ7u5yhiTmt6TiBhQTNTYvX
+1G2spm7erMCD9ysKLXcPa55F1V3J2yM8D6
+13B5FbC45DbCFMVvb3nvAGhrFRj1zZjdXx
+1E3Vhp4adQ1agL758mTT2JNPkDK7e5VE5M
+194DRrF1gpDcrQBL8F75FDxSgHzH7fxcp8
+1Bc83YYaVn5ugtBvZn7ydd5jDgWo7Hankc
+
+:~$ ku -W xprv9vWokxB3tpxkTWoHjF74jrnP76NQkC6STaAJTcEP6XFuPY4Rsu1t1YyfHXw8LcAPvmDptWgzeu5zWLKUiPe251vAsPZa9eg2sJ3ipa48hZZ -s 0/0-6 
+Ky1tP95iVwp7ip2gUYkhhygk7isFFAh875niSa6YFMCvW29eKhom
+L3HNXvWRXYtF5DQBMMqfc8wVCEpaB3UuyLN91V18aAkRkqZhUjkv
+L3NAP4GQpSvtkHHqqPCE4eyKVSEyNGSn7P6c64BF4PYuuKnF7AF5
+KyRoT6NYTfM6C6UTroVyrRV8unxMVcdFNd8qV9ovj7GGDMi8Cyy9
+KyhJnHBgHCJqzwHWLtXy2LgW8r6htp7XguvsSkhNUHKjQeQtePYq
+KzAFtr6XYWCtHy1Qq6MJf8VR6pA5yRYv9V5d1tH7ecH2Y4ETbboc
+KzMCCyspCkufDvRtDLT5LWZc8JehDVbRM3bo22HxQM99mJzSRjfU
+
+:~$ ku -a xpub69WAAThwjCX3fzskqGe56zj7f8Cu9epHpo5uFzdzerntGLPaRSL8ZMJ98r86dA4MBeeq7e3xLNmMpRavj2q1oggAS47u1PgPXhPJAM3tfnM -s 0/0-6
+1ALajVPDu5MrFPmuRKBzdG8PuVCaEJXfRx
+1BrJBT7WPyqRQ7u5yhiTmt6TiBhQTNTYvX
+1G2spm7erMCD9ysKLXcPa55F1V3J2yM8D6
+13B5FbC45DbCFMVvb3nvAGhrFRj1zZjdXx
+1E3Vhp4adQ1agL758mTT2JNPkDK7e5VE5M
+194DRrF1gpDcrQBL8F75FDxSgHzH7fxcp8
+1Bc83YYaVn5ugtBvZn7ydd5jDgWo7Hankc
+
+BIP0032 outlines a hierarchy where individual "accounts" and key series have the following form:
+
+m/ih/0/k - Receiving address series for account 'i', with 'k' as index (m/i'/0/k )
+m/ih/1/k - Change address series for spends from account 'i', with 'k' as index (m/i'/1/k )
+
+
